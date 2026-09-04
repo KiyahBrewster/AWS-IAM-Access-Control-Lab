@@ -1,9 +1,6 @@
 # AWS IAM Access Control Lab: Enforcing Least Privilege and Multi-Factor Authentication
 
 ## Overview
-
-This project demonstrates a practical Identity and Access Management (IAM) implementation in AWS, focused on two core security principles: **least privilege access** and **risk-based (conditional) access control**. It's the third project in a homelab cybersecurity portfolio series, following a Wazuh SIEM + Cowrie Honeypot lab and an Elastic Defend EDR lab.
-
 The goal of this project was to build a small but realistic identity governance model — the kind of foundational access control that any organization running workloads in the cloud needs, regardless of size. Rather than granting broad or default permissions, every identity created in this lab is scoped down to the minimum access required to do its job, and every login is required to prove it's not just a password, but a verified user.
 
 **Skills demonstrated:**
@@ -26,18 +23,6 @@ The goal of this project was to build a small but realistic identity governance 
 7. [Step 6: Attaching the Policy to the Group](#step-6-attaching-the-policy-to-the-group)
 8. [Governance Notes](#governance-notes)
 9. [Conclusion](#conclusion)
-
----
-
-## Platform Decision
-
-This lab was originally scoped for Microsoft Entra ID, and I also evaluated Okta before landing on AWS IAM. Documenting this decision honestly, because it reflects a real part of doing security work: sometimes the tooling doesn't cooperate, and you have to adapt.
-
-- **Microsoft Entra ID** was set up successfully, but a persistent Azure portal bug (a broken internal telemetry component tied to the `ADIbizaUX` diagnostics feature) repeatedly blocked access to the Users page with unresolvable "Interaction required" and 401 errors, even after trying incognito mode, cookie resets, and multiple browsers.
-- **Okta** (both the Developer and Integrator Free plans) requires a business/work email for signup, which ruled it out for a personal portfolio project.
-- **AWS IAM** was the platform that actually worked end-to-end, and it has the added benefit of being directly relevant — the job posting this project supports explicitly calls out AWS/Azure exposure and IAM fundamentals.
-
-IAM itself carries no cost on AWS regardless of account plan type, as long as no other billable services (EC2, S3, etc.) are provisioned.
 
 ---
 
