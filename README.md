@@ -32,7 +32,8 @@ Before creating any IAM resources, I enabled MFA on the AWS account's root user.
 
 A virtual MFA device was registered to the root user using an authenticator app, clearing AWS's built-in security recommendation for the account.
 
-<img width="1280" height="700" alt="root-mfa-enabled" src="https://github.com/user-attachments/assets/b176eebe-c453-43ea-989c-bf92303228ec" />
+<img width="1280" height="700" alt="root-mfa-enabled" src="https://github.com/user-attachments/assets/805698c4-381f-4f3c-a03d-7b5f98454090" />
+
 
 
 
