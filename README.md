@@ -103,6 +103,8 @@ This is a well-established AWS pattern for enforcing MFA at the policy level, ra
 
 <img width="1280" height="701" alt="mfa-policy-json" src="https://github.com/user-attachments/assets/0844f854-c0fd-4e17-828f-7235cf6dd68e" />
 
+
+
 <img width="1273" height="698" alt="mfa-policy-summary" src="https://github.com/user-attachments/assets/4e2caed9-cd3e-41bc-b727-e3dd43bc3f67" />
 
 
